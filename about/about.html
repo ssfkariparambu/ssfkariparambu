@@ -1,1 +1,309 @@
+<!DOCTYPE html><html lang="en">  
+<head>  
+  <meta charset="UTF-8" />  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="https://i.ibb.co/prz4dgYj/20250522-163807-removebg-preview.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <title>SSF KARIPARAMBU - ABOUT</title>  
+  <link href="https://i.ibb.co/prz4dgYj/20250522-163807-removebg-preview.png" rel="shortcut icon" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">  
+  <style>  
+  	html {
+  scroll-behavior: smooth;
+}
+    body {  
+  margin: 0;  
+  font-family: 'Poppins', sans-serif;
+background: #E5E6E8;  
+  color: black;  
+}
+  .content-space {
+    height: 50px;
+  }
 
+  /* Hamburger Icon */
+  .hamburger {
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    margin-left: 24.5cm;
+    margin-top: 0.4cm;
+    position: fixed;
+    transition: 0.3s;
+  }
+
+  .hamburger span {
+    width: 100%;
+    height: 4px;
+    background: white;
+    position: absolute;
+    left: 0;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+
+  .hamburger span:nth-child(1) { top: 0; }
+  .hamburger span:nth-child(2) { top: 9px; }
+  .hamburger span:nth-child(3) { top: 18px; }
+
+  /* When Active → X */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 9px;
+  }
+
+  /* Menu Under Header */
+  .menu {
+    width: 220px;
+    background: #222;
+    color: white;
+    position: fixed;
+    font-size: 20px;
+    top: 51px;        /* Menu starts below header */
+    right: -220px;    /* Hidden initially */
+    height: 9.65cm;
+    transition: 0.4s;
+    z-index: 999;
+    opacity: 70%;
+  }
+
+  .menu.active {
+    right: 0;
+  }
+
+  .menu a {
+    display: block;
+    padding: 15px 20px;
+    border-bottom: 1px solid #fff;
+    color: white;
+    text-decoration: none;
+  }
+ .main-header {
+   	width: 100%;
+   height: 1.35cm;
+   background: #1B2A47;
+   position: fixed;
+   display: flex;
+   color: white;
+   flex-direction: row;
+   gap: 0.1cm;
+   align-items: center;
+}
+.logo {
+	width: 2.5rem;
+	aspect-ratio: 1/1;
+	background: white;
+	border-radius: 12px;
+	margin: 6px;
+	margin-top: 7px;
+	margin-left: 0.5cm;
+}
+.headname {
+	color: white;
+	font-size: 1.3rem;
+	font-family: sans-serif;
+	font-weight: 1500;
+	margin-left: 0.25cm;
+}
+.para {
+  width: 91%;
+  max-width: 900px;
+  margin: 1rem auto;
+  line-height: 1.7;
+  text-align: justify; /* aligns both left and right edges */
+  text-justify: inter-word; /* evenly distributes words */
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+	margin-top: 10px;
+}
+.hundredone {
+   	font-weight: 1000;
+   font-size: 1.3rem;
+   margin-top: 20px;
+   margin-left: 4.5%;
+}
+.event {
+width: 91%;
+border-radius: 12px;  
+margin-left: 4.5%;
+background: linear-gradient(135deg, #E0F7FA, #E1F5FE);
+box-shadow: 0 4px 20px rgba(0,0,0,0.08);  
+display: flex;
+flex-direction: column;
+text-align: ;
+align-items: ;
+justify-content: start;
+margin-left: ;
+margin-top: 10px;
+line-height: 1.5;
+border:1px solid black;
+}
+    .btn{background:linear-gradient(90deg,#22d3ee,#60a5fa);
+color:#0b1229;
+    border:none;
+    width: 100%;
+    padding: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+.events {
+width: 91%;
+border-radius: 12px;  
+margin-left: 4.5%;
+background: linear-gradient(135deg, #E0F7FA, #E1F5FE);
+box-shadow: 0 4px 20px rgba(0,0,0,0.08);  
+display: flex;
+flex-direction: column;
+text-align: ;
+justify-content:start;
+margin-left: ;
+margin-top: 10px;
+height: 22.5cm;
+line-height: 1.5;
+border:1px solid black;
+}
+.thumbnail {
+width: 100%;
+aspect-ratio: 4/2.6;
+background-image: url("https://i.ibb.co/c7Fd7Xt/20250528-112541.jpg");
+background-color: black;
+background-size: cover;
+display: flex;
+flex-direction: column;
+border: 1.5px solid black;
+text-align: center;
+justify-content: center;
+color: white;
+font-size: 2.4rem;
+margin-top: ;
+}
+.par {
+		position: ;
+	width: 92%;
+	margin-left: -2%;
+background-color: ;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-left: ;
+margin-top: -1.5cm;
+line-height: 1.5;
+font-weight: 600;
+}
+  /* Mobile & small tablets (max 760px) */
+@media (max-width: 760px) {
+	.hamburger {
+	margin-left: 9.7cm;
+}
+.logo {
+	margin-left: 8.5px;
+	}
+	.headname {
+	margin-left: 0;
+}
+	.events {
+		height: 14cm;
+		}
+}
+  </style>  
+</head>  
+<body>  
+	 
+	
+	
+	<div class="main-header">
+ <img class="logo" src="https://i.ibb.co/prz4dgYj/20250522-163807-removebg-preview.png"/>
+ <h3 class="headname">𝐒𝐒𝐅 𝐊𝐀𝐑𝐈𝐏𝐀𝐑𝐀𝐌𝐁𝐔 𝐔𝐍𝐈𝐓</h3>
+</div>
+	<div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <div class="content-space"></div>
+  
+  <div class="menu" id="menu">
+  <a href="https://ssfkariparambu.github.io/ssfkariparambu/index.html">Home</a>
+  <a href="https://ssfkariparambu.github.io/ssfkariparambu/sahityotsav/sahityotsav.html">Sahityotsav</a>
+  <a href="https://ssfkariparambu.github.io/ssfkariparambu/weeklyupdate/weeklyupdate.html">Weekly Update</a>
+  <a href="https://ssfkariparambu.github.io/ssfkariparambu/event/event.html">Event</a>
+  <a href="https://ssfkariparambu.github.io/ssfkariparambu/wefi/wefi.html">Wefi</a>
+  <a href="https://ssfkariparambu.github.io/ssfkariparambu/about/about.html">About</a></div>
+
+<div class="thumbnail">
+        	<header class="ten" style="letter-spacing: 2.5px;"><b>ABOUT</b></header>
+        </div>
+            <br>
+           
+            <div class="event" style=""><header class="hundredone">• A Legacy of Service</header>
+            	<div class="para" style="text-align:justify;"><p>The SSF Kariparambu Unit Committee stands as a beacon of Islamic education, social service, and youth empowerment, deeply rooted in the rich tapestry of Kerala cultural and religious heritage. Established in 1973, the committee has been instrumental in shaping the lives of countless students.</p></div>
+            </div>
+            
+            <div class="event" style=""><header class="hundredone">• A Unit Steeped in Knowledge and Service</header>
+            	<div class="para" style="text-align:justify;"><p style="line-height: 1.5; font-family: 'Montserrat', sans-serif;">Kariparambu, a unit renowned for its resiliency and progressive spirit, has been a cradle of intellectual and spiritual awakening. The region has been blessed with the presence of luminaries whose contributions have shaped the course of Islamic thought and practice.</p></div>
+        </div>
+            <div class="event" style=""><header class="hundredone">• Our Vision and Mission</header>
+            	<div class="para" style="text-align:justify;"><p style="line-height: 1.5; font-family: 'Montserrat', sans-serif;">SSF Kariparamba is committed to creating a society where knowledge, compassion, and unity prevail. Our vision is to empower the youth, instill strong Islamic values, and contribute meaningfully to the betterment of society.<br><br>Through our various programs and initiatives, we aim to :<br><br>
+   	</p></div>
+	<div class="par" style="text-align:justify;">
+ <ul>
+• Provide quality education and skill development opportunities.<br><br>
+• Undertake social welfare activities to address community needs.<br><br>
+• Foster interfaith harmony and promote religious tolerances.<br><br>
+• Develop leadership qualities in young people.</b>
+</ul></div>
+	<div class="para" style="text-align:justify;"><p style="line-height: 1.5; font-family: 'Montserrat', sans-serif;">
+	We invite you to explore our website to learn more about our initiatives and how you can get involved.
+</p></div>
+        </div>
+	<div class="event" style=""><header class="hundredone">• SUPPORT US</header>
+	<div class="para">
+<p>
+    It is a youth movement working for the spiritual, cultural, and educational progress of society. Our activities aim to guide students and the community towards the path of goodness.
+  </p>
+    <a href="upi://pay?pa=mohdswalihk41@okicici&pn=Muhammed%20swalih%20K&aid=uGICAgKD1staVJw"><button class="btn brand">Donate Now</button></a>
+  </div></div>
+  <div class="events"><header class="hundredone">• CONTACT US</header>
+<div class="para">
+  <h3 style="font-weight:600;">Address</h3>
+        <p class="muted">Kariparambu, Areekode, Malappuram, Kerala – 673639</p>
+        <p style="text-align:left;" class="muted">Email: ssfkariparamb@gmail.com<br>Phone: +91 88918 80085</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d125229.77097321993!2d76.0230294!3d11.22972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6465beadbc2f9%3A0x7d20761f2249ffc6!2sSunni%20Juma%20Masjid!5e0!3m2!1sen!2sin!4v1756137187088!5m2!1sen!2sin" style="width:100%;aspect-ratio:16/11;;border:1px solid black;border-radius:12px"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div></div><br>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("menu");
+
+  // Toggle menu when hamburger clicked
+  hamburger.addEventListener("click", (e) => {
+    e.stopPropagation(); // body click avoid
+    hamburger.classList.toggle("active");
+    menu.classList.toggle("active");
+  });
+
+  // Clicking inside menu should NOT close it
+  menu.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+
+  // Clicking anywhere outside closes menu
+  document.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    menu.classList.remove("active");
+  });
+</script>
+</body>
+		</html>
