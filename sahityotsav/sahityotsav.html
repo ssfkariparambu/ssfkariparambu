@@ -1,0 +1,1779 @@
+<!DOCTYPE html><html lang="en">  
+<head>  
+  <meta charset="UTF-8" />  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="https://i.ibb.co/prz4dgYj/20250522-163807-removebg-preview.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+  <title>SSF KARIPARAMBU - SAHITYOTSAV</title>  
+  <link href="https://i.ibb.co/prz4dgYj/20250522-163807-removebg-preview.png" rel="shortcut icon" type="image/x-icon"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">  
+  <style>  
+  	html {
+  scroll-behavior: smooth;
+}
+    body {  
+  margin: 0;  
+  font-family: 'Poppins', sans-serif;
+background: #E5E6E8;  
+  color: black;  
+}
+  .content-space {
+    height: 50px;
+  }
+
+  /* Hamburger Icon */
+  .hamburger {
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    margin-left: 24.5cm;
+    margin-top: 0.4cm;
+    position: fixed;
+    transition: 0.3s;
+  }
+
+  .hamburger span {
+    width: 100%;
+    height: 4px;
+    background: white;
+    position: absolute;
+    left: 0;
+    transition: 0.4s;
+    border-radius: 4px;
+  }
+
+  .hamburger span:nth-child(1) { top: 0; }
+  .hamburger span:nth-child(2) { top: 9px; }
+  .hamburger span:nth-child(3) { top: 18px; }
+
+  /* When Active → X */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 9px;
+  }
+
+  /* Menu Under Header */
+  .menu {
+    width: 220px;
+    background: #222;
+    color: white;
+    position: fixed;
+    font-size: 20px;
+    top: 51px;        /* Menu starts below header */
+    right: -220px;    /* Hidden initially */
+    height: 9.65cm;
+    transition: 0.4s;
+    z-index: 999;
+    opacity: 70%;
+  }
+
+  .menu.active {
+    right: 0;
+  }
+
+  .menu a {
+    display: block;
+    padding: 15px 20px;
+    border-bottom: 1px solid #fff;
+    color: white;
+    text-decoration: none;
+  }
+ .main-header {
+   	width: 100%;
+   height: 1.35cm;
+   background: #1B2A47;
+   position: fixed;
+   display: flex;
+   color: white;
+   flex-direction: row;
+   gap: 0.1cm;
+   align-items: center;
+}
+.logo {
+	width: 2.5rem;
+	aspect-ratio: 1/1;
+	background: white;
+	border-radius: 12px;
+	margin: 6px;
+	margin-top: 7px;
+	margin-left: 0.5cm;
+}
+.headname {
+	color: white;
+	font-size: 1.3rem;
+	font-family: sans-serif;
+	font-weight: 1500;
+	margin-left: 0.25cm;
+}
+.para {
+  width: 91%;
+  max-width: 900px;
+  margin: 1rem auto;
+  line-height: 1.7;
+  text-align: justify; /* aligns both left and right edges */
+  text-justify: inter-word; /* evenly distributes words */
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+p {
+	margin-top: 10px;
+}
+.hundredone {
+   	font-weight: 1000;
+   font-size: 1.3rem;
+   margin-top: 20px;
+   margin-left: 4.5%;
+}
+.event {
+width: 91%;
+border-radius: 12px;  
+margin-left: 4.5%;
+background: linear-gradient(135deg, #E0F7FA, #E1F5FE);
+box-shadow: 0 4px 20px rgba(0,0,0,0.08);  
+display: flex;
+flex-direction: column;
+text-align: ;
+align-items: ;
+justify-content: start;
+margin-left: ;
+margin-top: 10px;
+line-height: 1.5;
+border:1px solid black;
+}
+    .btn{background:linear-gradient(90deg,#22d3ee,#60a5fa);
+color:#0b1229;
+    border:none;
+    width: 100%;
+    padding: 0.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+}
+.events {
+width: 91%;
+border-radius: 12px;  
+margin-left: 4.5%;
+background: linear-gradient(135deg, #E0F7FA, #E1F5FE);
+box-shadow: 0 4px 20px rgba(0,0,0,0.08);  
+display: flex;
+flex-direction: column;
+text-align: ;
+justify-content:start;
+margin-left: ;
+margin-top: 10px;
+height: 22.5cm;
+line-height: 1.5;
+border:1px solid black;
+}
+.thumbnail {
+
+width: 100%;
+
+aspect-ratio: 4/2.6;
+
+background-image: url("");
+
+background-color: black;
+
+background-size: cover;
+
+display: flex;
+
+flex-direction: column;
+
+border: 1.5px solid black;
+
+text-align: center;
+
+justify-content: center;
+
+color: white;
+
+font-size: 2.4rem;
+
+margin-top: ;
+
+}
+.sahi {
+    	width: 91%;
+    margin-left: 4.5%;
+}
+.poster {
+	width: 91%;	
+	margin-left: 4.5%;
+	margin-top: -10px;
+	border: 1.5px solid black;
+	border-radius: 2px;
+}
+.carousel {
+
+      display: flex;
+
+      overflow-x: auto;
+
+      scroll-snap-type: x mandatory;
+
+      scroll-behavior: smooth;
+
+      width: 91%;
+      
+      aspect-ratio: 452/640;
+
+      border: 2px solid #ccc;
+
+      margin-left: 4.5%;
+
+    }
+
+
+
+    .carousel img {
+
+      width: 100%; /* Adjust as needed */
+
+      height: auto;
+
+      flex-shrink: 0;
+
+      scroll-snap-align: start;
+
+      object-fit: cover;
+
+    }
+
+
+
+    /* Style the scroll bar (Webkit browsers) */
+
+    .carousel::-webkit-scrollbar {
+
+      height: 3px;
+
+    }
+
+
+
+    .carousel::-webkit-scrollbar-track {
+
+      background: #eee;
+
+    }
+
+
+
+    .carousel::-webkit-scrollbar-thumb {
+
+      background-color: #888;
+
+      border-radius: 10px;
+
+    }
+
+
+
+    .carousel::-webkit-scrollbar-thumb:hover {
+
+      background-color: #555;
+
+    }
+    .Winner {
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 20px;
+      border-radius: 10px;
+    }
+    .switch-buttons {
+
+
+
+      display: flex;
+
+
+
+      justify-content: center;
+
+
+
+      gap: px;
+
+
+
+      margin-bottom: 25px;
+
+
+
+    }
+
+
+
+
+
+
+
+    .switch-buttons button {
+
+
+
+      padding: 12px 24px;
+
+
+
+      font-family: serif;
+
+
+
+      font-size: 1rem;
+
+
+
+      font-weight: 600;
+
+
+
+      border-radius: px;
+
+
+
+      background-color: #007bff;
+
+
+
+      color: white;
+
+
+
+      cursor: pointer;
+
+
+
+      transition: background-color 0.3s ease;
+
+
+
+    }
+
+
+
+
+
+
+
+    .switch-buttons button:hover {
+
+
+
+      background-color: #0056b3;
+
+
+
+    }
+
+
+
+
+
+
+
+    .switch-buttons .active {
+
+
+
+      background-color: #28a745 !important; /* Green for selected */
+
+
+
+    }
+
+
+
+   
+
+
+
+    .content {
+
+
+
+      display: none;
+
+
+
+      width:75%;
+
+
+
+      background: #1B2A47;
+
+
+
+      padding: 30px;
+
+
+
+      margin: auto;
+
+
+
+      border-radius: 12px;
+
+
+
+      
+
+
+
+    }
+
+
+
+
+
+
+
+    .content.active {
+
+
+
+      display: block;
+
+
+
+      
+
+
+
+    }
+
+
+
+button.point {
+
+
+
+	text-align: center;
+width: 45%;
+
+
+	font-size: 1rem;
+
+
+
+}
+
+
+
+
+
+
+
+.one {
+
+color: white;
+
+      margin-bottom: 20px;
+
+
+
+      font-weight: 600;
+
+
+
+      font-size: 1.3rem;
+
+
+
+    }
+
+
+
+
+
+
+
+    select {
+
+
+
+      width: 91%;   
+
+
+
+      padding: 12px;
+
+
+
+      margin: 10px auto;
+
+
+
+      font-size: 16px;
+
+
+
+      margin-left: 4.5%;
+
+
+
+      border-radius: 8px;
+
+
+
+      border: 1px solid #ccc;
+
+
+
+      display: block;
+
+
+
+    }
+
+
+
+
+
+
+
+    .card {
+
+
+
+      background: white;
+
+
+
+      border-radius: 15px;
+padding-bottom: 15px;
+
+
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+
+
+      
+
+
+
+     width: 100%;
+
+
+
+     margin-left: %;
+
+
+
+      
+
+
+
+    }
+
+
+
+
+
+
+
+    .prize-row {
+
+
+
+      display: flex;
+
+
+
+      align-items: center;
+
+
+
+      justify-content: space-between;
+
+
+
+      padding: 12px 0;
+
+
+
+      border-bottom: 1px solid #eee;
+
+
+
+    }
+
+
+
+
+
+
+
+    .prize-label {
+
+
+
+      font-weight: bold;
+
+
+
+      flex: 1;
+
+
+
+      text-align: left;
+
+
+
+      margin-left: 2.5vh;
+
+
+
+    }
+
+
+
+
+
+
+
+    .prize-details {
+
+
+
+      flex: 2;
+
+
+
+      text-align: left;
+
+
+
+    }
+
+
+
+
+
+
+
+    .name {
+
+
+
+      font-weight: bold;
+
+
+
+      font-size: 16px;
+
+
+
+      margin-left: -6.5vh;
+
+
+
+      font-family: serif;
+
+
+
+    }
+
+
+
+
+
+
+
+    .subtitle {
+
+
+
+      font-size: 14px;
+
+
+
+      color: #666;
+
+
+
+      font-style: sans-serif;
+
+
+
+      margin-left: -6.5vh;
+
+
+
+    }
+    .download-btn:hover {
+      background: #218838;
+    }
+   .two {
+      margin-bottom: 2px;
+      font-weight: 600;
+      font-size: 1.3rem;
+      color: white;
+    }
+   .sixty {
+   	color: white;
+}
+    table {
+      width: 100%;
+      margin-left: -px;
+      margin-top: 18px;   
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .download-btn {
+
+
+
+      display: inline-block;
+
+
+
+      margin-top: ;
+
+
+
+      padding: 10px 20px;
+
+
+      background: #28a745;
+
+
+
+      color: white;
+
+
+
+      border-radius: 5px;
+
+
+
+      text-decoration: none;
+
+
+
+      font-weight: bold;
+
+
+
+      text-align: center;
+
+
+
+      width: 84%;
+      
+      
+      margin-left: 5%;
+
+
+
+    }
+
+
+
+
+
+    th, td {
+
+
+
+      padding: 15px;
+
+
+
+      border-bottom: 1px solid #ddd;
+
+
+
+      font-family: serif;
+
+color: black;
+
+    }
+
+.hed {
+
+
+
+   	width: 91%;
+
+
+
+   margin-left: 4.5%;
+
+
+
+   text-align: center;
+
+
+
+}
+.twelve {
+
+
+
+	font-size: 2rem;
+
+
+
+	text-align: center;
+
+
+
+	font-family: serif;
+
+
+
+	font-weight: 600;
+
+
+
+	
+
+
+
+	margin-top: 2vh;
+
+
+
+}
+
+    td {
+
+
+
+    	text-align: center;
+
+
+
+    font-weight: 600;
+
+
+
+}
+    th {
+      background-color: #13BEFF;
+    }
+    .download-btn1 {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 10px 20px;
+      background: #28a745;
+      color: white;
+      border-radius: 5px; 
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      width: 87%;
+      margin-left: 4.5%;
+    }
+  /* Mobile & small tablets (max 760px) */
+@media (max-width: 760px) {
+	.hamburger {
+	margin-left: 9.7cm;
+}
+.logo {
+	margin-left: 8.5px;
+	}
+	.headname {
+	margin-left: 0;
+}
+	.events {
+		height: 14cm;
+		}
+		.download-btn1 {
+			width: 81%;
+			}
+			.download-btn {
+				width:77%;
+				}
+				.card { 
+					width: 108%;
+					margin-left: -4%;
+					}
+}
+  </style>  
+</head>  
+<body>  
+	 
+	
+	
+	<div class="main-header">
+ <img class="logo" src="https://i.ibb.co/prz4dgYj/20250522-163807-removebg-preview.png"/>
+ <h3 class="headname">𝐒𝐒𝐅 𝐊𝐀𝐑𝐈𝐏𝐀𝐑𝐀𝐌𝐁𝐔 𝐔𝐍𝐈𝐓</h3>
+</div>
+	<div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  
+  <div class="content-space"></div>
+  
+  <div class="menu" id="menu">
+  <a href="https://ssfkariparambu.github.io/ssfkariparambu/index.html">Home</a>
+  <a href="https://ssfkariparambu.github.io/ssfkariparambu/sahityotsav/sahityotsav.html">Sahityotsav</a>
+  <a href="https://ssfkariparambu.github.io/ssfkariparambu/weeklyupdate/weeklyupdate.html">Weekly Update</a>
+  <a href="https://ssfkariparambu.github.io/ssfkariparambu/event/event.html">Event</a>
+  <a href="https://ssfkariparambu.github.io/ssfkariparambu/wefi/wefi.html">Wefi</a>
+  <a href="https://ssfkariparambu.github.io/ssfkariparambu/about/about.html">About</a></div>
+
+<div class="thumbnail">
+
+   	
+
+  <video autoplay muted loop playsinline class="bg-video">
+
+    <source src="https://github.com/ssf-kariparambu/Sahityotsav/raw/refs/heads/main/VID_20250623_094817_407.mp4" type="video/mp4" />
+
+    
+
+  </video>
+
+
+
+
+
+</div>
+
+            </div>
+
+
+
+        <div class="event"><div class="hed"><header class="twelve">Cerebrating Values</header></div>
+
+
+
+        <div class="para">
+
+
+
+<p>In Vaikom Muhammed Basheer's novel Ormayude Arakal, the scene where Basheer, who returns home after a long time, is invited to eat by his mother is presented in a very touching way. Basheer, who has traveled around the world for many years and finally reached his own home, is welcomed by his mother as if it were an ordinary day. There are no dramas or celebrations. The fact that his son has traveled all over the world is not an issue for his mother. For his mother, Basheer will always be her only son. Basheer describes this scene by saying that he has understood one of the greatest truths in his life. No matter how much time passes, we should try not to let a rift in relationships occur, and the SF Kariparamba Unit Literary Festival points to the values ​​of relationships that are becoming alienated.</p></div>
+
+
+
+    
+
+
+
+    	<img src="https://i.ibb.co/HLTNvGLh/clip1.png" class="sahi" />
+
+
+
+    </div>
+
+
+
+    	<div class="event"><header class="hundredone">• POINTS AND RESULTS</header><br>
+
+
+
+    	
+
+
+
+    	<div class="switch-buttons">
+
+
+
+    <button class="point" id="btn-point" onclick="showSection('point')"><header class="twenty">POINTS</header></button>
+
+
+
+    <button class="point" id="btn-result" onclick="showSection('result')"><header class="twentyone">RESULTS</header></button>
+
+
+
+  </div>
+
+
+
+
+
+
+
+  <div id="point" class="content active">
+
+
+
+  <header class="two">Team Points</header>
+
+
+
+    <header class="sixty">Final  Results</header>
+
+
+
+  <table>
+
+
+
+    <thead>
+
+
+
+      <tr>
+
+
+
+        <th>Position</th>
+
+
+
+        <th>Team</th>
+
+
+
+        <th>Points</th>
+
+
+
+      </tr>
+
+
+
+    </thead>
+
+
+
+    <tbody>
+
+
+
+      <tr>
+
+
+
+        <td class="pos" style="color: #FFD700;">1st</td>
+
+
+
+        <td>KRP ഈസ്റ്റ്‌</td>
+
+
+
+        <td>154</td>
+
+
+
+      </tr>
+
+
+
+      <tr>
+
+
+
+        <td class="pos" style="color: #C0C0C0;">2nd</td>
+
+
+
+        <td>KRP വെസ്റ്റ്‌</td>
+
+
+
+        <td>128</td>
+
+
+
+      </tr>
+
+
+
+      <tr>
+
+
+
+        <td class="pos" style="color: #CD7F32;">3rd</td>
+
+
+
+        <td>CKDM</td>
+
+
+
+        <td>96</td>
+
+
+
+      </tr>
+
+
+
+    </tbody>
+
+
+
+  </table>
+
+
+
+</div>
+
+
+
+
+
+
+
+  <div id="result" class="content">
+
+
+
+    <header class="one">Select Category and Program</header>
+
+
+
+
+
+
+
+  <select id="categorySelect">
+
+
+
+    <option value="">-- Choose Category --</option>
+
+
+
+    <option value="LPB">LOWER PRIMARY (BOYS)</option>
+
+
+
+    <option value="LPG">LOWER PRIMARY (GIRLS)</option>
+
+
+
+    <option value="UPB">UPPER PRIMARY (BOYS)</option>
+
+
+
+    <option value="LPG">UPPER PRIMARY (GIRLS)</option>
+
+
+
+    <option value="HSB">HIGH SCHOOL (BOYS)</option>   
+
+
+
+    <option value="HSG">HIGH SCHOOL (GIRLS)</option>
+
+
+
+    <option value="HSSB">HIGHER SECONDARY (BOYS)</option>
+
+    
+
+    <option value="HSSG">HIGHER SECONDARY (GIRLS)</option>
+
+    
+
+    <option value="JB">JUNIOR (BOYS)</option>
+
+
+
+  </select>
+
+
+
+
+
+
+
+  <select id="programSelect" disabled>
+
+
+
+    <option value="">-- Choose Program --</option>
+
+
+
+  </select>
+
+
+
+
+
+
+
+  <div id="resultCard" class="card" style="display: none;">
+
+
+
+    <div class="prize-row">
+
+
+
+      <div class="prize-label" style="color: #FFD700;">1st</div>
+
+
+
+      <div class="prize-details">
+
+
+
+        <div class="name" id="firstName"></div>
+
+
+
+        <div class="subtitle" id="firstSubtitle"></div>
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+    <div class="prize-row">
+
+
+
+      <div class="prize-label" style="color: #C0C0C0;">2nd</div>
+
+
+
+      <div class="prize-details">
+
+
+
+        <div class="name" id="secondName"></div>
+
+
+
+        <div class="subtitle" id="secondSubtitle"></div>
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+    <div class="prize-row">
+
+
+
+      <div class="prize-label" style="color: #CD7F32;">3rd</div>
+
+
+
+      <div class="prize-details">
+
+
+
+        <div class="name" id="thirdName"></div>
+
+
+
+        <div class="subtitle" id="thirdSubtitle"></div>
+
+
+
+      </div>
+
+
+
+    </div>
+
+
+
+    <img id="programImage" class="Winner" src="" alt="">
+
+
+
+    <a id="downloadBtn" class="download-btn" href="#" download>Download Image</a>
+
+
+
+  </div>
+
+
+
+  </div><br> 
+
+</div>
+
+  
+
+
+
+  <div class="event"><header class="hundredone">• E-Poster</header>
+
+
+
+    <br>
+
+
+
+    	<img src="https://i.ibb.co/Z1bK0kvb/IMG-20250523-WA0162.jpg" class="poster" />
+
+
+
+    <a class="download-btn1" href="https://i.ibb.co/Z1bK0kvb/IMG-20250523-WA0162.jpg">Download Image</a>
+
+
+
+    	<br></div>
+
+
+
+  
+
+
+
+      	<div class="event"><header class="hundredone">• Gallery</header>
+
+<div class="carousel" style="margin-top: 0.8rem;">
+
+<img src="https://i.ibb.co/Nd2prpKT/IMG-20250530-WA0040.jpg" alt=""/>
+
+<img src="https://i.ibb.co/PsMfb296/20250901-190107.jpg" alt=""/>
+
+<img src="https://i.ibb.co/HffkQczC/IMG-20250624-WA0003.jpg" alt=""/>
+
+<img src="https://i.ibb.co/zTPmc9cp/20250901-190030.jpg" alt=""/>
+
+</div><br>
+</div>
+    
+
+          
+	<div class="event" style=""><header class="hundredone">• SUPPORT US</header>
+	<div class="para">
+<p>
+    It is a youth movement working for the spiritual, cultural, and educational progress of society. Our activities aim to guide students and the community towards the path of goodness.
+  </p>
+    <a href="upi://pay?pa=mohdswalihk41@okicici&pn=Muhammed%20swalih%20K&aid=uGICAgKD1staVJw"><button class="btn brand">Donate Now</button></a>
+  </div></div>
+  <div class="events"><header class="hundredone">• CONTACT US</header>
+<div class="para">
+  <h3 style="font-weight:600;">Address</h3>
+        <p class="muted">Kariparambu, Areekode, Malappuram, Kerala – 673639</p>
+        <p style="text-align:left;" class="muted">Email: ssfkariparamb@gmail.com<br>Phone: +91 88918 80085</p>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d125229.77097321993!2d76.0230294!3d11.22972!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba6465beadbc2f9%3A0x7d20761f2249ffc6!2sSunni%20Juma%20Masjid!5e0!3m2!1sen!2sin!4v1756137187088!5m2!1sen!2sin" style="width:100%;aspect-ratio:16/11;;border:1px solid black;border-radius:12px"  loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div></div><br>
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const menu = document.getElementById("menu");
+
+  // Toggle menu when hamburger clicked
+  hamburger.addEventListener("click", (e) => {
+    e.stopPropagation(); // body click avoid
+    hamburger.classList.toggle("active");
+    menu.classList.toggle("active");
+  });
+
+  // Clicking inside menu should NOT close it
+  menu.addEventListener("click", (e) => {
+    e.stopPropagation();
+  });
+
+  // Clicking anywhere outside closes menu
+  document.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    menu.classList.remove("active");
+  });
+</script>
+<script>
+
+
+
+    const data = {
+
+  LPB: {
+
+    "Speech Mal": { first: { name: "Shammas Vc", subtitle: "West" }, second: { name: "-------------------------", subtitle: "" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/NDX5W2r/20250624-132326.jpg" },
+
+    "Madh Song": { first: { name: "Shammas Vc", subtitle: "West" }, second: { name: "Razan Kc", subtitle: "East" }, third: { name: "Bakthiyar P", subtitle: "Ckm" }, image: "https://i.ibb.co/5XjkcXWm/20250624-133421.jpg" },
+
+    "Quiz": { first: { name: "Shahin Rahman", subtitle: "East" }, second: { name: "Bakthiyar P", subtitle: "Ckm" }, third: { name: "Razan Kc", subtitle: "East" }, image: "https://i.ibb.co/Kc0gjBmg/IMG-20250601-WA0156.jpg" },
+
+    "Pencil Drawing": { first: { name: "Luthufi Vc", subtitle: "East" }, second: { name: "Jaseem CC", subtitle: "West" }, third: { name: "Nabeeh Cp", subtitle: "East" }, image: "https://i.ibb.co/wr6wfgW0/20250624-133152.jpg" },
+
+    "Water Coloring": { first: { name: "Luthufi Vc", subtitle: "East" }, second: { name: "Nabeeh Cp", subtitle: "East" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/Kp41MTng/IMG-20250601-WA0158.jpg" },
+
+    "Reading Ara-Mal": { first: { name: "Razan Kc", subtitle: "East" }, second: { name: "Luthufi Vc", subtitle: "East" }, third: { name: "Bakthiyar P", subtitle: "Ckm" }, image: "https://i.ibb.co/Q7CMDgxd/IMG-20250624-WA0007.jpg" },
+
+    "Reading Mal": { first: { name: "Aboobaker Kc", subtitle: "East" }, second: { name: "Bakthiyar P", subtitle: "Ckm" }, third: { name: "Razan Kc", subtitle: "East" }, image: "https://i.ibb.co/JRVy7tTZ/IMG-20250601-WA0157.jpg" }
+
+  },
+
+
+
+  LPG: {
+
+    "Pencil Drawing": { first: { name: "Nashwa Pk", subtitle: "East" }, second: { name: "F. Shenza ", subtitle: "Ckm" }, third: { name: "F. Dilfa Ak", subtitle: "East" }, image: "https://i.ibb.co/pjKPgFb0/20250625-173524.jpg" },
+
+    "Water Coloring": { first: { name: "Nashwa Pk", subtitle: "East" }, second: { name: "Shibla P", subtitle: "West" }, third: { name: "Fareeda Cp", subtitle: "Ckm" }, image: "https://i.ibb.co/8LNRjXsy/20250625-173807.jpg" },
+
+    "Oringami": { first: { name: "Hadiya Pk", subtitle: "East" }, second: { name: "-------------------------", subtitle: "" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/qF3dCf67/20250625-174009.jpg" },
+
+    "Handwriting Malayalam": { first: { name: "Hadiya Pk", subtitle: "East" }, second: { name: "-------------------------", subtitle: "" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/xtD2pvmX/20250625-174054.jpg" }
+
+  },
+
+
+
+  UPB: {
+
+    "Speech": { first: { name: "Saad Ak", subtitle: "Ckm" }, second: { name: "Aafthab Kc", subtitle: "East" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/N6JVV0wQ/IMG-20250624-WA0006.jpg" },
+
+    "Mappila Song": { first: { name: "Sufiyan K", subtitle: "West" }, second: { name: "Shameem Mp", subtitle: "Ckm" }, third: { name: "Nabeel Pk", subtitle: "Ckm" }, image: "https://i.ibb.co/LzsJcQk9/IMG-20250601-WA0159.jpg" },
+
+    "Quiz": { first: { name: "Afthab Kc", subtitle: "East" }, second: { name: "Sufiyan K", subtitle: "West" }, third: { name: "Saad Ak", subtitle: "Ckm" }, image: "https://i.ibb.co/ch51VQrY/IMG-20250601-WA0160.jpg" },
+
+    "Pencil Drawing": { first: { name: "Shameem Mp", subtitle: "Ckm" }, second: { name: "Sufiyan K", subtitle: "West" }, third: { name: "Afthab Kc", subtitle: "East" }, image: "https://i.ibb.co/dwF0HmK8/IMG-20250624-WA0009.jpg" },
+
+    "Water Coloring": { first: { name: "Shameem Mp", subtitle: "Ckm" }, second: { name: "Sufiyan K", subtitle: "West" }, third: { name: "Afthab Kc", subtitle: "East" }, image: "https://i.ibb.co/TfGwHxT/IMG-20250624-WA0005.jpg" },
+
+    "Sudoku": { first: { name: "Nabeel Pk", subtitle: "Ckm" }, second: { name: "Saad Ak", subtitle: "Ckm" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/5hWcfNf8/20250624-145950.jpg" },
+
+    "Story Writing": { first: { name: "Afthab Kc", subtitle: "East" }, second: { name: "Nabeel Pk", subtitle: "Ckm" }, third: { name: "Shameem Mp", subtitle: "Ckm" }, image: "https://i.ibb.co/Rkx5D6Gf/IMG-20250624-WA0008.jpg" },
+
+    "Ganitha Keli": { first: { name: "Afthab Kc", subtitle: "East" }, second: { name: "Faji Kc", subtitle: "East" }, third: { name: "Shimil Jas Pk", subtitle: "East" }, image: "https://i.ibb.co/mV2GjQSz/20250624-140812.jpg" },
+
+    "Spelling Bee": { first: { name: "Faji Kc", subtitle: "East" }, second: { name: "Nabeel Pk", subtitle: "Ckm" }, third: { name: "Shimil Jas Pk", subtitle: "East" }, image: "https://i.ibb.co/Txj50ycM/IMG-20250624-WA0004.jpg" }
+
+  },
+
+
+
+  UPG: {
+
+    "Pencil Drawing": { first: { name: "Hadiya Pk", subtitle: "East" }, second: { name: "F.Hisha Pk", subtitle: "East" }, third: { name: "F. Faiha Tk", subtitle: "West" }, image: "https://i.ibb.co/FqxYS4jT/20250625-175904.jpg" },
+
+    "Water Coloring": { first: { name: "Hadiya Pk", subtitle: "East" }, second: { name: "F. Shifa Vc", subtitle: "West" }, third: { name: "F.Naja K", subtitle: "West" }, image: "https://i.ibb.co/pvzw3TZr/20250625-180130.jpg" }
+
+  },
+
+
+
+  HSB: {
+
+    "Speech": { first: { name: "Midlaj P", subtitle: "Ckm" }, second: { name: "Farhan C", subtitle: "West" }, third: { name: "Arshaq Vc", subtitle: "West" }, image: "https://i.ibb.co/Cg6K9XL/IMG-20250624-WA0010.jpg" },
+
+    "Mappila Song": { first: { name: "Sahl Mp", subtitle: "Ckm" }, second: { name: "Nihal K", subtitle: "West" }, third: { name: "Minhaj Kp", subtitle: "East" }, image: "https://i.ibb.co/mr46MkhZ/IMG-20250624-WA0011.jpg" },
+
+    "Madh Song": { first: { name: "Minhaj Kp", subtitle: "East" }, second: { name: "Nihal K", subtitle: "West" }, third: { name: "Sahl Mp", subtitle: "Ckm" }, image: "https://i.ibb.co/DgSHDT9p/IMG-20250601-WA0136.jpg" },
+
+    "Quiz": { first: { name: "Naseem Vc", subtitle: "West" }, second: { name: "Arshaq Vc", subtitle: "West" }, third: { name: "-------------------------", subtitle: "https://i.ibb.co/xK2NhdQf/IMG-20250601-WA0135.jpg" }, image: "" },
+
+    "Pencil Drawing": { first: { name: "Sublul Huda Kp", subtitle: "Ckm" }, second: { name: "Nihal K", subtitle: "West" }, third: { name: "Shifin Ak", subtitle: "East" }, image: "https://i.ibb.co/cKmm3SZj/IMG-20250624-WA0012.jpg" },
+
+    "Water Coloring": { first: { name: "Sublul Huda Kp", subtitle: "Ckm" }, second: { name: "Nihal K", subtitle: "West" }, third: { name: "Arshaq Vc", subtitle: "West" }, image: "https://i.ibb.co/9Xg0nsr/20250626-134451.jpg" },
+
+    "Essay Mal": { first: { name: "Nihal K", subtitle: "West" }, second: { name: "Arshaq Vc", subtitle: "West" }, third: { name: "Sublul Huda Kp", subtitle: "Ckm" }, image: "https://i.ibb.co/ZpqW4tDC/20250625-183209.jpg" },
+
+    "Story Writing": { first: { name: "Sublul Huda Kp", subtitle: "Ckm" }, second: { name: "Arshaq Vc", subtitle: "West" }, third: { name: "Nihal K", subtitle: "West" }, image: "https://i.ibb.co/cKvjXm9W/IMG-20250601-WA0137.jpg" },
+
+    "Caption Writing": { first: { name: "Sublul Huda Kp", subtitle: "Ckm" }, second: { name: "Hishal Pk", subtitle: "East" }, third: { name: "Nihal K", subtitle: "West" }, image: "https://i.ibb.co/VYGKXT5Q/IMG-20250601-WA0138.jpg" },
+
+    "Spelling Bee": { first: { name: "Sublul Huda Kp", subtitle: "Ckm" }, second: { name: "Naseem Vc", subtitle: "West" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/HQS9JT0/20250626-134936.jpg" }
+
+  },
+
+
+
+  HSG: {
+
+    "Pencil Drawing": { first: { name: "F. Hiba Ck", subtitle: "East" }, second: { name: "Munavvira K", subtitle: "West" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/WvFgQz2Q/20250625-182241.jpg" },
+
+    "Story Writing": { first: { name: "F. Hiba Ck", subtitle: "East" }, second: { name: "F.Shahana Vc", subtitle: "Ckm" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/0jPzKStS/20250626-134012.jpg" },
+
+    "Embroidery": { first: { name: "Suhaila Ak", subtitle: "Ckm" }, second: { name: "-------------------------", subtitle: "" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/rfcGwpL4/20250625-182754.jpg" }
+
+  },
+
+
+
+  HSSB: {
+
+    "Speech Mal": { first: { name: "Swalih K", subtitle: "East" }, second: { name: "-------------------------", subtitle: "" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/sJv2C2Qp/20250625-185248.jpg" },
+
+    "Essay Mal": { first: { name: "Swalih K", subtitle: "East" }, second: { name: "-------------------------", subtitle: "" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/R4d84qmd/20250625-185100.jpg" },
+
+    "Story Writing": { first: { name: "Swalih K", subtitle: "East" }, second: { name: "-------------------------", subtitle: "" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/wNx6qWMQ/20250625-185317.jpg" },
+
+    "News Writing": { first: { name: "Shakir Ck", subtitle: "East" }, second: { name: "-------------------------", subtitle: "" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/20bHKtgy/20250625-185408.jpg" },
+
+    "Quiz": { first: { name: "Swalih K", subtitle: "East" }, second: { name: "-------------------------", subtitle: "" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/1tvLKPv9/20250625-185134.jpg" }
+
+  },
+
+
+
+  HSSG: {
+
+    "Story Writing": { first: { name: "Hamna K", subtitle: "West" }, second: { name: "-------------------------", subtitle: "" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/ksfdcrcW/20250625-185520.jpg" }
+
+  },
+
+
+
+  JB: {
+
+    "Story Writing": { first: { name: "Saleeth Ak", subtitle: "Ckm" }, second: { name: "-------------------------", subtitle: "" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/VcpsFTK6/20250625-185745.jpg" },
+
+    "Poem Making": { first: { name: "Saleeth Ak", subtitle: "Ckm" }, second: { name: "-------------------------", subtitle: "" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/HLxJ35Nn/20250625-185810.jpg" },
+
+    "Calligraphy": { first: { name: "Asjad", subtitle: "East" }, second: { name: "-------------------------", subtitle: "" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/zTftG5jt/20250625-185855.jpg" },
+
+    "Feature Writing": { first: { name: "Saleeth Ak", subtitle: "Ckm" }, second: { name: "-------------------------", subtitle: "" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/RkgJG2rj/20250625-185714.jpg" },
+
+    "Essay Mal": { first: { name: "Saleeth Ak", subtitle: "Ckm" }, second: { name: "-------------------------", subtitle: "" }, third: { name: "-------------------------", subtitle: "" }, image: "https://i.ibb.co/XZPvwXVt/20250625-185646.jpg" }
+
+  }
+
+};
+
+
+
+
+
+
+
+    const categorySelect = document.getElementById("categorySelect");
+
+
+
+    const programSelect = document.getElementById("programSelect");
+
+
+
+    const resultCard = document.getElementById("resultCard");
+
+
+
+
+
+
+
+    categorySelect.addEventListener("change", () => {
+
+
+
+      const category = categorySelect.value;
+
+
+
+      programSelect.innerHTML = '<option value="">-- Choose Program --</option>';
+
+
+
+      programSelect.disabled = true;
+
+
+
+      if (data[category]) {
+
+
+
+        Object.keys(data[category]).forEach(program => {
+
+
+
+          const option = document.createElement("option");
+
+
+
+          option.value = program;
+
+
+
+          option.textContent = program;
+
+
+
+          programSelect.appendChild(option);
+
+
+
+        });
+
+
+
+        programSelect.disabled = false;
+
+
+
+      }
+
+
+
+      resultCard.style.display = "none";
+
+
+
+    });
+
+
+
+
+
+
+
+    programSelect.addEventListener("change", () => {
+
+
+
+      const category = categorySelect.value;
+
+
+
+      const program = programSelect.value;
+
+
+
+      if (data[category] && data[category][program]) {
+
+
+
+        const entry = data[category][program];
+
+
+
+        document.getElementById("firstName").textContent = entry.first.name;
+
+
+
+        document.getElementById("firstSubtitle").textContent = entry.first.subtitle;
+
+
+
+        document.getElementById("secondName").textContent = entry.second.name;
+
+
+
+        document.getElementById("secondSubtitle").textContent = entry.second.subtitle;
+
+
+
+        document.getElementById("thirdName").textContent = entry.third.name;
+
+
+
+        document.getElementById("thirdSubtitle").textContent = entry.third.subtitle;
+
+
+
+        document.getElementById("programImage").src = entry.image;
+
+
+
+        document.getElementById("downloadBtn").href = entry.image;
+
+
+
+        resultCard.style.display = "block";
+
+
+
+      }
+
+
+
+    });
+
+
+
+  
+
+
+
+
+
+    function showSection(id) {
+
+
+
+      // Switch content
+
+
+
+      document.querySelectorAll('.content').forEach(section => {
+
+
+
+        section.classList.remove('active');
+
+
+
+      });
+
+
+
+      document.getElementById(id).classList.add('active');
+
+
+
+
+
+
+
+      // Switch active button style
+
+
+
+      document.querySelectorAll('.switch-buttons button').forEach(btn => {
+
+
+
+        btn.classList.remove('active');
+
+
+
+      });
+
+
+
+
+
+
+
+      const buttonId = 'btn-' + id;
+
+
+
+      document.getElementById(buttonId).classList.add('active');
+
+
+
+    }
+
+
+
+
+
+
+
+    // Set initial state
+
+
+
+    showSection('point');
+
+
+
+  </script>
+</body>
+	</html>
